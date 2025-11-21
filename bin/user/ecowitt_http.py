@@ -153,7 +153,7 @@ KNOWN_SENSORS = ('wh25', 'wh26', 'wn31', 'wn34', 'wn35',
 DEFAULT_MAX_TRIES = 3
 # default wait time between retries when attempting to obtain data from the
 # device
-DEFAULT_RETRY_WAIT = 2
+DEFAULT_RETRY_WAIT = 3
 # default timeout when fetching data from a URL
 DEFAULT_URL_TIMEOUT = 3
 # default grace period after last_good_ts/start_ts after which we accept
