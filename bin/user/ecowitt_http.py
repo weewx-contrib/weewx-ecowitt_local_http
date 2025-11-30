@@ -1504,7 +1504,7 @@ class SdMapper(FieldMapper):
             # iterate over the source data keys
             for field in rec.keys():
                 # strip the units information from the key
-                clean_key = re.sub("\(.*?\)","", field)
+                clean_key = re.sub(r"\(.*?\)","", field)
                 # now try to map the source data using the sanitised key, but
                 # be prepared to catch any one of a number of exceptions
                 try:
@@ -8781,7 +8781,7 @@ class EcowittHttpParser:
             if _name is not None:
                 # look for a sub-string starting with 'CH' and ending with an
                 # integer
-                _match = re.search('CH\d+', _name)
+                _match = re.search(r'CH\d+', _name)
                 # if a 'CH-integer' sub-string was found convert to lower case
                 # and use the sub-string as the channel
                 if _match is not None:
