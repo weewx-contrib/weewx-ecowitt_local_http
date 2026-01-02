@@ -1,6 +1,6 @@
 # Ecowitt Local HTTP API Driver
 
-**Note:** General support issues for the Ecowitt Local HTTP API driver (aka the Ecowitt local HTTP driver) should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt local HTTP driver [Issues Page](https://github.com/gjr80/weewx-ecowitt_local_http/issues "Ecowitt local HTTP driver Issues") should only be used for specific bugs in the Ecowitt local HTTP driver code. It is recommended that even if an Ecowitt local HTTP driver bug is suspected, users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
+**Note:** General support issues for the Ecowitt Local HTTP API driver (aka the Ecowitt local HTTP driver) should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt local HTTP driver [Issues Page](https://github.com/weewx-contrib/weewx-ecowitt_local_http/issues "Ecowitt local HTTP driver Issues") should only be used for specific bugs in the Ecowitt local HTTP driver code. It is recommended that even if an Ecowitt local HTTP driver bug is suspected, users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
 
 ## Description
 
@@ -31,17 +31,17 @@ The Ecowitt local HTTP driver requires:
 
     For WeeWX package installs:
 
-        weectl extension install https://github.com/gjr80/weewx-ecowitt_local_http/releases/latest/download/ecowitt_http.zip
+        weectl extension install https://github.com/weewx-contrib/weewx-ecowitt_local_http/releases/latest/download/ecowitt_http.zip
 
     For WeeWX *pip* installs the Python virtual environment must be activated before the extension is installed:
 
         source ~/weewx-venv/bin/activate
-        weectl extension install https://github.com/gjr80/weewx-ecowitt_local_http/releases/latest/download/ecowitt_http.zip
+        weectl extension install https://github.com/weewx-contrib/weewx-ecowitt_local_http/releases/latest/download/ecowitt_http.zip
 
     For WeeWX installs from *git* the Python virtual environment must be activated before the extension is installed:
 
         source ~/weewx-venv/bin/activate
-        python3 ~/weewx/src/weectl.py extension install https://github.com/gjr80/weewx-ecowitt_local_http/releases/latest/download/ecowitt_http.zip
+        python3 ~/weewx/src/weectl.py extension install https://github.com/weewx-contrib/weewx-ecowitt_local_http/releases/latest/download/ecowitt_http.zip
 
 3.  Test the Ecowitt local HTTP driver by running the driver file directly using the *--test-driver* command line option.
 
@@ -99,7 +99,7 @@ The Ecowitt local HTTP driver requires:
 
         sudo systemctl restart weewx
 
-7.  You may wish to refer to the [Ecowitt local HTTP driver wiki](https://github.com/gjr80/weewx-ecowitt_local_http/wiki) for further guidance on customising the operation of the Ecowitt local HTTP driver and integrating device data into WeeWX generated reports.
+7.  You may wish to refer to the [Ecowitt local HTTP driver wiki](https://github.com/weewx-contrib/weewx-ecowitt_local_http/wiki) for further guidance on customising the operation of the Ecowitt local HTTP driver and integrating device data into WeeWX generated reports.
 
 ### Installation as a WeeWX service
 
@@ -159,20 +159,20 @@ The Ecowitt local HTTP driver requires:
 
         sudo systemctl restart weewx
 
-7.  You may wish to refer to the [Ecowitt local HTTP driver wiki](https://github.com/gjr80/weewx-ecowitt_local_http/wiki) for further guidance on customising the operation of the Ecowitt local HTTP driver and integrating device data into WeeWX generated reports.
+7.  You may wish to refer to the [Ecowitt local HTTP driver wiki](https://github.com/weewx-contrib/weewx-ecowitt_local_http/wiki) for further guidance on customising the operation of the Ecowitt local HTTP driver and integrating device data into WeeWX generated reports.
 
 
 ## Upgrade Instructions
 
-**Note:** Before upgrading the Ecowitt local HTTP driver, check the [Instructions for specific versions](https://github.com/gjr80/weewx-ecowitt_local_http/wiki/Upgrade-Guide#instructions-for-specific-versions) section of the Ecowitt local HTTP driver [Upgrade Guide](https://github.com/gjr80/weewx-ecowitt_local_http/wiki/Upgrade-Guide) to see if any specific actions are required as part of the upgrade.
+**Note:** Before upgrading the Ecowitt local HTTP driver, check the [Instructions for specific versions](https://github.com/weewx-contrib/weewx-ecowitt_local_http/wiki/Upgrade-Guide#instructions-for-specific-versions) section of the Ecowitt local HTTP driver [Upgrade Guide](https://github.com/weewx-contrib/weewx-ecowitt_local_http/wiki/Upgrade-Guide) to see if any specific actions are required as part of the upgrade.
 
 To upgrade from an earlier version of the Ecowitt local HTTP driver (installed as either a WeeWX driver or a WeeWX service) simply install the Ecowitt local HTTP driver version you wish to upgrade to as per the [Installation Instructions](#installation-instructions) above.
 
 
 ## Support
 
-General support issues for the Ecowitt local HTTP driver should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt local HTTP driver [Issues Page](https://github.com/gjr80/weewx-ecowitt_local_http/issues "Ecowitt local HTTP driver Issues") should only be used for specific bugs in the Ecowitt local HTTP driver code. It is recommended that even if an Ecowitt local HTTP driver bug is suspected users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
+General support issues for the Ecowitt local HTTP driver should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt local HTTP driver [Issues Page](https://github.com/weewx-contrib/weewx-ecowitt_local_http/issues "Ecowitt local HTTP driver Issues") should only be used for specific bugs in the Ecowitt local HTTP driver code. It is recommended that even if an Ecowitt local HTTP driver bug is suspected users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
 
 ## Licensing
 
-The Ecowitt local HTTP driver/GW1000 driver is licensed under the [GNU Public License v3](https://github.com/gjr80/weewx-ecowitt_local_http/blob/master/LICENSE "Ecowitt Gateway Driver License").
+The Ecowitt local HTTP driver/GW1000 driver is licensed under the [GNU Public License v3](https://github.com/weewx-contrib/weewx-ecowitt_local_http/blob/master/LICENSE "Ecowitt Gateway Driver License").
